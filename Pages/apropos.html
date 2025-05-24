@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motel</title>
+    <link rel="stylesheet" href="../styles/apropos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="page1">
+        <div class="header">
+            <div>
+                <img class="logo" src="../images/logo.png" alt="">
+            </div>
+            <div id="navbar" class="head">
+                <a  class="noneligne" href="../index.html">Accueil</a>
+                <a class="noneligne" href="./chambres_et_tarifs.html">Chambres et Tarifs</a>
+                <a class="noneligne" href="./apropos.html">A propos</a>
+                <a class="noneligne" href="./contact.html">Contact</a>
+
+                <a href="https://wa.me/+237691439909?text=Bonjour, je suis interessé">  <button class="contactez contour2">contactez-nous</button></a>
+            </div>
+
+           
+            <button id="btnburger" class="burg"><i id="burger" class="fa-solid fa-bars"></i></button>
+        </div>
+
+                <!--  -->
+        <header>
+    <h1 class="titre ti_motel">Bienvenue au Motel Accueil</h1>
+</header>
+
+<div class="container">
+    <section>
+        <h2 class="ti">Qui sommes-nous ?</h2>
+        <p>
+            Le Motel Accueil est un havre de paix situé à Makepe Missoke. Depuis plus de 10 ans, nous offrons à nos visiteurs un service de qualité dans un cadre calme et sécurisé.
+        </p>
+    </section>
+ <!--  --> <!--  --><!--  -->
+  
+  <div class="buttons">
+    <button class="butt" onclick="showCategory('chambre')">Nos chambres</button>
+    <button class="butt" onclick="showCategory('bain')">salle de bain</button>
+    <button class="butt" onclick="showCategory('bar')">bar</button>
+  </div>
+  <h1 id="category-title"></h1>
+  <div id="content"></div>
+<!--  --><!--  -->
+    <section>
+        <h2 class="ti">Pourquoi choisir notre motel ?</h2>
+        <ul>
+            <li>Prix abordables</li>
+            <li>Chambres modernes et confortables</li>
+            <li>Service client disponible 24h/24</li>
+            <li>Proximité des transports et restaurants</li>
+        </ul>
+    </section>
+
+    <section class="testimonials">
+        <h2>Ce que nos clients disent</h2>
+        <blockquote>
+            "Un excellent séjour, personnel très accueillant et chambre impeccable !"
+            <footer style="text-align: right;">- Yan T.</footer>
+        </blockquote>
+        <blockquote>
+            "Le meilleur rapport qualité/prix de la région. Je recommande fortement."
+            <footer style="text-align: right;">- Amina B.</footer>
+        </blockquote>
+    </section>
+
+    <section>
+        <h2 class="ti">Contact</h2>
+        <p>
+            Pour réserver ou pour plus d'informations, appelez-nous au <strong>+237 671 20 73 75</strong> ou écrivez-nous à 
+            <a href="mailto:contact@motelsoleil.com">fofackrayol@gmail.com</a>.
+        </p>
+    </section>
+</div>
+
+        <!--  -->
+  <footer class="">
+    <div class="footer1">
+      <!-- Colonne 1 -->
+      <div class="footer2">
+        <div class="a">
+          <img class="logo" src="../images/logo.png">
+        </div>
+        <p class="a">
+          <i class="fas fa-map-marker-alt ico"></i> Douala, Cameroun
+        </p>
+      </div>
+      <!-- Colonne 2 -->
+      <div class="footer2">
+        <h3 class="a">Contact</h3>
+        <p class="a">
+          <i class="fas fa-envelope ico"></i> fofackrayol@gmail.com
+        </p>
+        <p class="a">
+          <i class="fas fa-phone-alt ico"></i> 671207375 / 675999570
+        </p>
+      </div>
+      <!-- Colonne 3 -->
+      <div class="footer2">
+        <h3 class="a">Réseaux sociaux</h3>
+        <div class="a b">
+          <a style="color: black" href="#"><i class="fab fa-instagram ico" ></i></a>
+          <a style="color: black" href="#"><i class="fab fa-facebook ico"></i></a>
+          <a style="color: black" href="#"><i class="fab fa-tiktok ico"></i></a>
+          <a style="color: black" href="https://wa.me/+237691439909?text=Bonjour, je suis interessé"><i class="fab fa-whatsapp ico"></i></a>
+        </div>
+      </div>
+    </div>
+<hr>
+    <div
+      class="footer1">
+      <span>&copy; 2025 Motel Accueil</span>
+      <span>Tout droit réservé • Designé par <a target="_blank" class=""
+          href="https://wa.me/+237671207375?text=Bonjour, Designeur de Motel Accueil">@rayol</a></span>
+    </div>
+  </footer>
+<script src="../JS/script.js"></script>
+<script src="../JS/motel_js.js"></script>
+</body>
+</html>

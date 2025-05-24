@@ -1,0 +1,514 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+} 
+
+
+:root{
+    --gris:#808080e6; /* couleur en background de l'image*/
+    --btn:#e8e3d8; /* couleur en background de l'image*/
+    --texteblanc:rgb(255, 255, 255);/* couleur du texte*/
+    --textenoir:black;
+    --bg_page:#e8e3d8;/* couleur en background de la page*/
+    --gris:#808080e6;
+    --head:#8a8881;/* backgroud du head */
+    --burger:#8a8881;/* burger */
+    --blocblanc:white; /*couleur de box*/
+    --footer:#d7ba7c; /*footer et navbar*/
+}
+
+
+.noneligne:hover{
+    color: #d19927;
+    /* transform: rotate(45deg); */
+}
+.ico:hover{
+    color: blue;
+}
+
+/* ******************************************** */
+.butt{
+    height: 40px;
+    
+}
+h1 {
+  text-align: center;
+}
+
+.buttons {
+
+    align-items: center;
+  text-align: center;
+
+  gap: 40px;
+}
+
+button {
+    background-color: #d7ba7c;
+  font-size: 14px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+}
+button:hover{
+    background-color: #d19927;
+    /* transform: rotate(45deg); */
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item {
+  background: white;
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.stars {
+  color: gold;
+}
+
+.commander {
+  margin-top: 10px;
+  background:#d7ba7c;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+i{
+    color: black;
+}
+.commander:hover{
+    transform: scale(0.9,0.9);
+    /* transform: rotate(45deg); */
+}
+/* ********************************************* */
+.hiden{
+    display: none;
+}
+body{
+  background-color:var(--bg_page);
+}
+.titre{
+    font-weight: bolder;
+    font-size:300%;   
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    height: 70px;
+}
+.head{
+    display: flex;
+    gap: 60px;
+    margin-left: 30px;
+}
+.logo{
+    width: 140px;
+    height: 90px;
+}
+.noneligne{
+    text-decoration: none;
+    color: var(--textenoir);
+}
+.contactez{
+    position: absolute;
+    top: 9px;
+    right: 6px;
+}
+.footer {
+  background: var(--footer);
+  color: black;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-section {
+  flex: 1;
+  padding: 1rem;
+}
+.ti{
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 150px;
+    background-color: var(--footer);
+   justify-content: center;
+   align-items: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+.gall:hover{
+    transform: scale(1.1,1.1);
+}
+.gallery img {
+    width: 100px;
+    max-width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px black;
+    
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.testimonials blockquote {
+    background: white;
+    border-left: 5px solid var(--footer);
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.testimonials{
+    text-align: right;
+    font-style: italic;
+}
+
+footer {
+    background-color: var(--footer);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.a{
+    display: flex;
+}
+.b{
+    display: flex;
+    gap: 5px;
+}
+  .contour2{
+    border-radius:10px ;
+    height: 45px;
+    width: 170px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.contour2:hover{
+    transform: scale(0.9,0.9);
+    /* transform: rotate(45deg); */
+}
+  /* burger */
+.burg{
+    background-color: transparent;
+    border: none;
+    padding-right: -10px;
+}
+#burger{
+    font-size: 35px;
+    display: none;
+}
+/* burger */
+/*  *//*  *//*  *//*  */
+.affiche{
+    visibility: visible;
+}
+.masquer{
+    visibility: hidden;
+}
+/*  *//*  *//*  *//*  */
+
+@media(max-width:1000px){
+    .header{
+        display: flex;
+        gap: 1%;
+        font-size: 50%;
+        
+    }
+    .head{
+        display: flex;
+        gap: 20px;
+        font-size: 210%;
+        margin-top: 14px;
+    }
+        .contactez{
+        margin-top: 2px;
+        font-size: 12px;
+    }
+        .contour2{
+        border-radius:10px ;
+        height: 30px;
+        width: 120px;
+    }
+        #burger{
+        color: black;
+        font-size: 35px;
+        display: contents;
+    }
+}
+    @media(min-width:801px){
+    #burger{
+        display: none;
+    }
+  }
+@media(max-width:800px){
+      footer {
+    font-size: 16px;
+}
+button:hover{
+    background-color: initial;
+    /* transform: rotate(45deg); */
+}
+    .logo{
+    width: 90px;
+    height: 40px;
+}
+.ti_motel{
+    font-size: 250%;
+}
+            .header{
+            position: relative;
+            display: flex;
+            gap: 1%;
+            font-size: 10px;
+            background-color: var(--head);
+            border-radius: 10px;
+            top: 15px;
+        }
+                .head{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 37px;
+            right: 0;
+            width: 100%;
+            height: 200px;
+            background-color:var(--head);
+            opacity: 1;
+            align-items: center;
+            justify-content: center;
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+            /* display: none; */
+            visibility: hidden;
+            gap: 20px;
+            font-size: 150%;
+        }
+            .contactez{
+        margin-top: 2px;
+        font-size: 10px;
+        position: initial;
+    }
+        .contour2{
+        border-radius:10px ;
+        height: 30px;
+        }
+                .masquer{
+            visibility: hidden;
+        }
+        .visible{
+            visibility: visible;
+            
+        }
+        .burg{
+            background-color:var(--burger);
+            border-radius: 5px;
+            border: none;
+        }
+        #burger{
+            font-size: 35px;
+            display: contents;
+        } 
+}
+@media(max-width:600px){
+    footer {
+    font-size: 14px;
+}
+     .footer1{
+        display: flex;
+        padding: 0 10px 0 10px;
+         gap: 15px;
+     }
+.ti_motel{
+    font-size: 200%;
+}
+        .header{
+            position: relative;
+            display: flex;
+            gap: 1%;
+            font-size: 10px;
+            background-color: var(--head);
+            border-radius: 10px;
+            top: 15px;
+        }
+                .head{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 37px;
+            right: 0;
+            width: 100%;
+            height: 200px;
+            background-color:var(--head);
+            opacity: 1;
+            align-items: center;
+            justify-content: center;
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+            /* display: none; */
+            visibility: hidden;
+            gap: 20px;
+            font-size: 150%;
+        }
+            .contactez{
+        margin-top: 2px;
+        font-size: 10px;
+        position: initial;
+    }
+        .contour2{
+        border-radius:10px ;
+        height: 30px;
+        }
+                .masquer{
+            visibility: hidden;
+        }
+        .visible{
+            visibility: visible;
+            
+        }
+        .burg{
+            background-color:var(--burger);
+            border-radius: 5px;
+            border: none;
+        }
+        #burger{
+            font-size: 35px;
+            display: contents;
+        }   
+}
+@media(max-width:400px){
+    .ti_motel{
+    font-size: 150%;
+}
+    .header{
+        position: relative;
+        display: flex;
+        gap: 1%;
+        font-size: 10px;
+        background-color: var(--burger);
+        border-radius: 10px;
+        top: 15px;
+    }
+        .head{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 37px;
+        width: 100%;
+        height: 200px;
+        background-color: var(--burger);
+        opacity: 1;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        /* display: none; */
+        visibility: hidden;
+        transition: all;
+    }
+       .masquer{
+            visibility: hidden;
+        }
+        .visible{
+            visibility: visible;
+            
+        }
+        .contactez{
+        margin-top: 2px;
+        font-size: 10px;
+        position: initial;
+    }
+        .contour2{
+        border-radius:10px ;
+        height: 30px;
+        width: 100px;
+    }
+        .burg{
+        background-color:var(--burger);
+        border-radius: 5px;
+        }
+            #burger{
+        font-size: 35px;
+        visibility: visible;
+    }
+}
+  @media(max-width:380px){
+    .header{
+        display: flex;
+        gap: 1%;
+        font-size: 10px;
+    }
+        .header{
+        display: flex;
+        gap: 1%;
+        font-size: 10px;
+    }
+        .contactez{
+        margin-top: 2px;
+        font-size: 10px;
+    }
+        .contour2{
+        border-radius:10px ;
+        height: 30px;
+        width: 100px;
+    }
+    .butt{
+    width: 80px;
+    font-size: 10px;
+    margin: 5px;
+}
+
+}

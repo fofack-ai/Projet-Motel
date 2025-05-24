@@ -1,0 +1,551 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+} 
+
+:root{
+    --gris:#808080e6; /* couleur en background de l'image*/
+    --btn:#e8e3d8; /* couleur en background de l'image*/
+    --texteblanc:white;/* couleur du texte*/
+    --textenoir:black;
+    --bg_page:#e8e3d8;/* couleur en background de la page*/
+    --gris:#808080e6;
+    --head:#8a8881;
+    --blocblanc:white; /*couleur de box*/
+}
+
+.noneligne:hover{
+    color: #d19927;
+    /* transform: rotate(45deg); */
+}
+
+.ico:hover{
+    color: blue;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.head{
+    display: flex;
+    gap: 60px;
+    margin-left: 30px;
+}
+.bloc{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    gap: 30px;
+    background-color: #e8e3d8;
+}
+.bloc1{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 150px;
+    background-color: #d7ba7c;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.titre{
+    font-weight: bolder;
+    font-size:300%;   
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content:space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 300px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #d7ba7c;
+    font-size: 120%;
+    align-items: center;
+}
+.texte{
+    padding: 16px;
+    text-align: center;
+    text-align: justify;
+}
+.ch_img{
+    
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.contactez{
+    position: absolute;
+    margin-top: -3px;
+    right: 10px;
+}
+.equip{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+    gap: 90px;
+}
+.equip0{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.equip1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 100vw;
+    justify-content: space-around;
+    gap: 10%;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+    background-color: white;
+    align-items: center;
+    border-radius: 9px;
+    box-shadow: 5px 5px 15px black;
+}
+.nettoy{
+    width: 30px;
+    height: 30px;
+}
+.logo{
+    width: 140px;
+    height: 90px;
+}
+.contour{
+    border-radius:10px ;
+    height: 45px;
+    width: 170px;
+    background-color: black;
+    color: white;
+}
+.fin_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 30px;
+}
+.contour2{
+    border-radius:10px ;
+    height: 45px;
+    width: 170px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.contour1{
+    border-radius:5px;
+    height: 50px;
+    width: 200px;
+    background-color: #d7ba7c;
+}
+
+.contour2:hover{
+    transform: scale(0.9,0.9);
+    /* transform: rotate(45deg); */
+}
+.burg{
+    background-color: transparent;
+    border: none;
+    padding-right: 10px;
+}
+#burger{
+    font-size: 35px;
+    display: none;
+}
+/* burger */
+
+.réserv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.noneligne{
+    text-decoration: none;
+    color: black;
+}
+.two{
+    display: flex;
+    gap: 15px;
+}
+.contour1:hover{
+    transform: scale(0.9,0.9);
+    /* transform: rotate(45deg); */
+}
+.fin_head{
+    display: flex;
+    gap: 40px;
+    font-size: 15px;
+}
+footer {
+    background-color: #d7ba7c;
+    text-align: center;
+    padding: 20px;
+    
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.a{
+    display: flex;
+}
+.b{
+    display: flex;
+    gap: 5px;
+}
+@media (max-width:1000px){
+    .contour1:active{
+    transform: scale(0.9,0.9);
+    /* transform: rotate(45deg); */
+}
+    .box{
+        gap: 40px;
+    }
+    .titre{
+        font-size:45px;   
+    }
+        .header{
+        display: flex;
+        gap: 1%;
+        font-size: 50%;
+    }
+    .head{
+        display: flex;
+        gap: 20px;
+        font-size: 210%;
+    }
+        .contactez{
+        margin-top: 2px;
+        font-size: 12px;
+    }
+        .contour2{
+        border-radius:10px ;
+        height: 30px;
+        width: 100px;
+    }
+        #burger{
+        color: black;
+        font-size: 35px;
+        display: contents;
+    }
+}
+@media(min-width:801px){
+    #burger{
+        display: none;
+    }
+}
+@media (max-width:800px){
+     .equip1{
+        display: flex;
+        gap: 30px;
+    }
+    .logo{
+    width: 90px;
+    height: 40px;
+}
+
+    .box{
+        gap: 40px;
+    }
+    .titre{
+        font-size:35px;   
+    }
+    .one{
+        display: flex;
+        width: 200px;
+        font-size:15px; 
+    }
+    .contour{
+        border-radius:10px ;
+        height: 30px;
+        width: 110px;
+        font-size: 10px;
+    }
+            .header{
+            position: relative;
+            display: flex;
+            gap: 1%;
+            font-size: 10px;
+            background-color: var(--head);
+            border-radius: 10px;
+            top: 15px;
+        }
+                .head{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 37px;
+            right: 0;
+            width: 100%;
+            height: 200px;
+            background-color:var(--head);
+            opacity: 1;
+            align-items: center;
+            justify-content: center;
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+            /* display: none; */
+            visibility: hidden;
+            gap: 20px;
+            font-size: 150%;
+        }
+            .contactez{
+        margin-top: 2px;
+        font-size: 10px;
+        position: initial;
+    }
+        .contour2{
+        border-radius:10px ;
+        height: 30px;
+        }
+                .masquer{
+            visibility: hidden;
+        }
+        .visible{
+            visibility: visible;
+            
+        }
+        .burg{
+            background-color:#8a8881;
+            border-radius: 5px;
+            border: none;
+        }
+        #burger{
+            font-size: 35px;
+            display: contents;
+        } 
+}
+
+@media (max-width:600px){
+    footer {
+    font-size: 14px;
+}
+     .footer1{
+        display: flex;
+        padding: 0 10px 0 10px;
+         gap: 15px;
+     }
+    
+    .box{
+        gap: 40px;
+    }
+    .titre{
+        font-size:20px;   
+    }
+     .equip1{
+        display: flex;
+        gap: 30px;
+    }
+    .contour{
+        border-radius:10px ;
+        height: 45px;
+        width: 90px;
+        font-size: 10px;
+    }
+        .header{
+            position: relative;
+            display: flex;
+            gap: 1%;
+            font-size: 10px;
+            background-color: var(--head);
+            border-radius: 10px;
+            top: 15px;
+        }
+                .head{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 37px;
+            right: 0;
+            width: 100%;
+            height: 200px;
+            background-color:var(--head);
+            opacity: 1;
+            align-items: center;
+            justify-content: center;
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+            /* display: none; */
+            visibility: hidden;
+            gap: 20px;
+            font-size: 150%;
+        }
+            .contactez{
+        margin-top: 2px;
+        font-size: 10px;
+        position: initial;
+    }
+        .contour2{
+        border-radius:10px ;
+        height: 30px;
+        }
+                .masquer{
+            visibility: hidden;
+        }
+        .visible{
+            visibility: visible;
+            
+        }
+        .burg{
+            background-color:#8a8881;
+            border-radius: 5px;
+            border: none;
+        }
+        #burger{
+            font-size: 35px;
+            display: contents;
+        } 
+}
+@media (max-width:500px){
+     .equip1{
+        display: flex;
+        gap: 30px;
+        padding: 0 10px 0 10px;
+    }
+         .footer1{
+        padding: 0 3px 0 3px;
+     }
+}
+@media (max-width:400px){
+    .box{
+        gap: 40px;
+    }
+    .titre{
+        font-size:20px;   
+    }
+    .contour1{
+        width: 170px;
+        font-size: 13px;
+    }
+    .fin_head{
+        display: flex;
+        gap: 10px;
+        font-size: 15px;
+    }
+    .contour{
+        width: 80px;
+        font-size: 9px;
+        /* display: none; */
+    }
+    .equip1{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    .header{
+        position: relative;
+        display: flex;
+        gap: 1%;
+        font-size: 10px;
+        background-color: #8a8881;
+        border-radius: 10px;
+        top: 15px;
+    }
+        .head{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 37px;
+        width: 100%;
+        height: 200px;
+        background-color: #8a8881;
+        opacity: 1;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        /* display: none; */
+        visibility: hidden;
+        transition: all;
+    }
+       .masquer{
+            visibility: hidden;
+        }
+        .visible{
+            visibility: visible;
+            
+        }
+        .contactez{
+        margin-top: 2px;
+        font-size: 10px;
+        position: initial;
+    }
+        .contour2{
+        border-radius:10px ;
+        height: 30px;
+        width: 100px;
+    }
+        .burg{
+        background-color:#8a8881;
+        border-radius: 5px;
+        }
+            #burger{
+        font-size: 35px;
+        visibility: visible;
+    }
+}
+
+  @media(max-width:380px){
+    .header{
+        display: flex;
+        gap: 1%;
+        font-size: 10px;
+    }
+        .header{
+        display: flex;
+        gap: 1%;
+        font-size: 10px;
+    }
+        .contactez{
+        margin-top: 2px;
+        font-size: 10px;
+    }
+        .contour2{
+        border-radius:10px ;
+        height: 30px;
+        width: 100px;
+    }
+        .contour1{
+            width: 40vw;
+            font-size:12px ;
+    }
+        .titre{
+        font-size:17px;   
+    }
+    .bloc{
+        width: initial;
+    }
+}
+
+
