@@ -70,7 +70,7 @@ body{
     background-size: 100vw 750px;
     height: 750px;
     flex-wrap: wrap;
-    filter: brightness(0.8);
+
 }
 .page1_{
     display: flex;
