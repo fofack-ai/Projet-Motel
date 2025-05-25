@@ -62,7 +62,7 @@ function generateStars(note) {
     div.innerHTML = `
       <img src="${item.img}">
       <div class="stars">${generateStars(item.note)}</div>
-      <a href="https://wa.me/+237691439909?text=Bonjour, je suis interessé"><button class="commander"><i class="fab fa-whatsapp "></i> Reserver</button></a>
+      <a href="https://wa.me/+237671207375?text=Bonjour, je suis interessé"><button class="commander"><i class="fab fa-whatsapp "></i> Reserver</button></a>
     `;
     content.appendChild(div);
   });
